@@ -57,7 +57,7 @@ class geometry_handler(ABC):
             Transformed geometry.
         """
         
-        self.geometry = geometry_transform(self._init_geometry, state)
+        self.geometry = geometry_transform(self._init_geometry, state.flatten())
 
         return self.geometry
 
