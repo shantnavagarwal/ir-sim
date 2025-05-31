@@ -3,7 +3,7 @@ from irsim.world.sensors.sensor_factory import SensorFactory
 
 
 from irsim.world.object_base import ObjectBase
-from irsim.world.robots.robot_diff import RobotDiff, RobotDiffQafka
+from irsim.world.robots.robot_diff import RobotDiff
 from irsim.world.robots.robot_acker import RobotAcker
 from irsim.world.robots.robot_omni import RobotOmni
 
