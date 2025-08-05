@@ -1,4 +1,5 @@
 from irsim.world import ObjectBase
+from collections import deque
 
 
 class RobotDiff(ObjectBase):
@@ -11,6 +12,7 @@ class RobotDiff(ObjectBase):
             state_dim=state_dim,
             **kwargs,
         )
+        self.custom_goal_traj: deque = None
 
         assert (
             state_dim >= 3
